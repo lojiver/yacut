@@ -1,4 +1,4 @@
-from flask import redirect, render_template, flash, abort
+from flask import redirect, render_template, flash
 
 from . import app, db
 from .forms import URLMapForm
