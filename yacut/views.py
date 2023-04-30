@@ -29,7 +29,5 @@ def index_view():
 
 @app.route('/<string:slug>')
 def short_url_view(slug):
-    url = URLMap.query.filter_by(short=slug).first()
-    if url is None:
-        abort(404)
+    url = URLMap.query.filter_by(short=slug).first_or_404()
     return redirect(url.original)
