@@ -18,7 +18,7 @@ git clone
 ```
 
 ```
-cd cat_charity_fund/
+cd yacut/
 ```
 
 Cоздать и активировать виртуальное окружение:
